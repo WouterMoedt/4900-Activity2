@@ -1,4 +1,10 @@
 <code>
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
 
 body {
   font-family: Arial;
@@ -15,7 +21,7 @@ h3, h4, h5, h6 {
 }
 
 header {
-    height: 30px;
+    height: 15px;
     width: 94%;
     padding: 3%;
     background-color: #FF5722;
