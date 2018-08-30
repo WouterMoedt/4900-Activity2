@@ -1,10 +1,29 @@
 <code>
-.container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, 100px);
-    grid-template-rows: repeat(2, 100px);
-}
+
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+
+#wrapper {
+	width: 96%;
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+	}
+
+	#main {
+		width: 60%;
+		margin-right: 5%;
+		float: left;
+		}
+
+	aside {
+		width: 35%;
+		float: right;
+		}
 
 body {
   font-family: Arial;
@@ -12,17 +31,21 @@ body {
 
 h1, h2 {
   font-family: Arial;
+  style="font-size:10vw";
   color: #FFFFFF;
 }
 
 h3, h4, h5, h6 {
   font-family: Arial;
+  style="font-size:10vw";
   color: #FF5722;
 }
 
 header {
     height: 15px;
     width: 94%;
+    float: left;
+	display: block;
     padding: 3%;
     background-color: #FF5722;
 }
@@ -68,5 +91,47 @@ th {
   width: 50px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 480px) {
+}
 
+#skipTo {
+	display: none;
+	}
+	#skipTo li {
+		background: #b1fffc;
+		}
+
+#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+@media screen and (max-width: 480px) {
+
+	#skipTo {
+		display: block;
+		}
+
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px;
+		width: 100%;
+		}
+		header nav li {
+			margin: 0;
+			background: #efefef;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}
+}
 </code>
